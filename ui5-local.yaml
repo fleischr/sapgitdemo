@@ -1,0 +1,36 @@
+specVersion: '2.4'
+metadata:
+  name: 'gitdemo1'
+type: application
+framework:
+  name: SAPUI5
+  version: '1.95.0'
+  libraries: 
+    - name: sap.m
+    - name: sap.ushell
+    - name: sap.fe.templates
+    - name: themelib_sap_fiori_3
+server:
+  customMiddleware:
+  - name: fiori-tools-proxy
+    afterMiddleware: compression
+    configuration:
+      ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+      backend:
+      - path: /sap
+        url: https://aac3e874-ab9b-4a5d-be91-c1bfd886e5c6.abap.us10.hana.ondemand.com
+        scp: true
+  - name: sap-fe-mockserver
+    beforeMiddleware: fiori-tools-proxy
+    configuration:
+      service:
+        urlBasePath: /sap/opu/odata4/sap/zui_rap_travel_o4_2921/srvd/sap/zui_rap_travel_2921/0001
+        name: ''
+        metadataXmlPath: ./webapp/localService/metadata.xml
+        mockdataRootPath: ./webapp/localService/mockdata
+        generateMockData: true
+  - name: fiori-tools-appreload
+    afterMiddleware: compression
+    configuration:
+     port: 35729
+     path: webapp
