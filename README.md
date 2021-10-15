@@ -33,7 +33,11 @@ so much to add...
 Changed by Tim Michler.
 	Update #2.
 
+<<<<<<< HEAD
 Alice's enhancement in process...
+=======
+*****!!! BOB's EMERGENCY CHANGE !!!****
+>>>>>>> aeebe1dab8183795c707750e304617982c5f25f6
 
 ### Starting the generated app
 
