@@ -37,7 +37,12 @@ Changed by Tim Michler.
 Alice's enhancement in process...
 =======
 *****!!! BOB's EMERGENCY CHANGE !!!****
+<<<<<<< HEAD
 >>>>>>> aeebe1dab8183795c707750e304617982c5f25f6
+=======
+*****!!! BOB's EMERGENCY CHANGE 2 !!!****
+*****!!! BOB's EMERGENCY CHANGE 3 !!!****
+>>>>>>> c300843c054589038e83d3d06bc7d30980a85e32
 
 ### Starting the generated app
 
