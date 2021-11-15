@@ -37,6 +37,7 @@ Changed by Tim Michler.
 *****!!! BOB's EMERGENCY CHANGE 3 !!!****
 *****!!! BOB's EMERGENCY CHANGE 4 !!!****
 *****!!! BOB's EMERGENCY CHANGE 5 !!!****
+<<<<<<< HEAD
 *****!!! BOB's EMERGENCY CHANGE 6 !!!****
 *****!!! BOB's EMERGENCY CHANGE 7 !!!****
 *****!!! BOB's EMERGENCY CHANGE 8 !!!****
@@ -44,6 +45,9 @@ Changed by Tim Michler.
 *****!!! BOB's EMERGENCY CHANGE 10 !!!****
 
 Alice enhancement again
+=======
+
+>>>>>>> 3876ecb (JIRA-401 Demo Oct 20)
 
 ### Starting the generated app
 
